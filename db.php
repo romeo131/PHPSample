@@ -15,7 +15,7 @@
 		
 			$rs = mysqli_query($conn, "select * from tb_sample");
 		
-		while($row = mysql_fetch_array($result)) {
+		while($row = mysql_fetch_array($rs)) {
 			echo $row['name'];
 			echo "<br>";
 		}
