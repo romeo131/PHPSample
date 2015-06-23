@@ -18,7 +18,7 @@ ini_set("display_errors", 1);
 		echo "DB Connected <br>";
 			$rs = mysqli_query($conn, "select * from tb_sample");
 		
-			while($row = mysql_fetch_array($rs)) {
+			while($row = mysqli_fetch_array($rs)) {
 				echo $row['name'];
 				echo "<br>";
 			}
