@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
 //connect
 $cluster = new CouchbaseCluster('http://192.168.1.18:8091');
 $bucket = $cluster->openBucket('beer-sample');
