@@ -7,7 +7,7 @@ ini_set("display_errors", 1);
 
 
 	$db_host = "localhost";
-	$db_user = "administrator";
+	$db_user = "root";
 	$db_password = "netmarble1!";
 	$db_name = "test";
 	$conn = mysqli_connect($db_host, $db_user, $db_password, $db_name);
