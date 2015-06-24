@@ -14,8 +14,9 @@ $result = $bucket->get('aldaris');
 $doc = $result->value;
 var_dump($doc);
 //echo $doc->name.', ABV: '.$doc->abv."\n";
+var_dump($doc->name);
 
-echo "goforit : ".$doc->name;
+echo $doc->name;
 echo "6<br>";
 // Store a document
 $doc->comment = 'Random beer from Norway';
