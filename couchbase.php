@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
 // Connect to Couchbase Server
 $cluster = new CouchbaseCluster('http://192.168.1.18:8091');
 $bucket = $cluster->openBucket('beer-sample');
@@ -7,7 +10,7 @@ $bucket = $cluster->openBucket('beer-sample');
 $result = $bucket->get('aass_brewery-juleol');
 $doc = $result->value;
 
-echo $doc->name . ', ABV: ' . $doc->abv . "\n";
+echo $doc->name.', ABV: '.$doc->abv."\n";
 
 // Store a document
 $doc->comment = 'Random beer from Norway';
