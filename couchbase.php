@@ -16,7 +16,7 @@ echo "4<br>";
 $doc = $result->value;
 echo "5<br>";
 //echo $doc->name.', ABV: '.$doc->abv."\n";
-echo $doc->name;
+echo "goforit : ".$doc->name;
 echo "6<br>";
 // Store a document
 $doc->comment = 'Random beer from Norway';
