@@ -10,7 +10,8 @@ $bucket = $cluster->openBucket('beer-sample');
 $result = $bucket->get('aass_brewery-juleol');
 $doc = $result->value;
 
-echo $doc->name.', ABV: '.$doc->abv."\n";
+//echo $doc->name.', ABV: '.$doc->abv."\n";
+echo $doc->name;
 
 // Store a document
 $doc->comment = 'Random beer from Norway';
