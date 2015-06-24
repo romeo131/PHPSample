@@ -1,6 +1,6 @@
 <?php
 // Connect to Couchbase Server
-$cluster = new CouchbaseCluster('http://127.0.0.1:8091');
+$cluster = new CouchbaseCluster('http://192.168.1.18:8091');
 $bucket = $cluster->openBucket('beer-sample');
 
 // Retrieve a document
