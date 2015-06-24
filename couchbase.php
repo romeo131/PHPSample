@@ -13,5 +13,5 @@ echo $doc->name . ', ABV: ' . $doc->abv . "\n";
 $doc->comment = 'Random beer from Norway';
 $result = $bucket->replace('aass_brewery-juleol', $doc);
 
-var_dump($result); 
+var_dump($result);
 ?>
